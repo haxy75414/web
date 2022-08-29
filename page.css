@@ -8,6 +8,81 @@
  * Copyright (c) 2019 Daniel Eden
  */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.download-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.download-btn {
+    position: relative;
+    background: red;
+    color: #fff;
+    width: 210px;
+    height: 40px;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #ff0000a1;
+    color: #fff;
+}
+
+.download-btn i {
+    margin-left: 5px;
+}
+
+.countdown {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.countdown span {
+    color: red;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.pleaseWait-text {
+    font-size: 1.1em;
+    font-weight: 600;
+    display: none;
+}
+
+.manualDownload-text {
+    font-size: 1.1em;
+    font-weight: 600;
+    display: none;
+}
+
+.manualDownload-link {
+    color: red;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
 @-webkit-keyframes bounce {
   from,
   20%,
